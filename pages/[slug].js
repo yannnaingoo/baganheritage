@@ -1,7 +1,7 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-import axios from "axios";
+// import Head from "next/head";
+// import { useRouter } from "next/router";
+// import { useEffect } from "react";
+// import axios from "axios";
 
 // export default function Post({ post }) {
 //   const router = useRouter();
