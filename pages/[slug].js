@@ -61,15 +61,15 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getServerSideProps({ params }) {
-  const slug = params.slug;
-  const res = await axios.get(
-    `https://baganheritage.xyz/wp-json/wp/v2/posts?slug=${slug}`
-  );
-  const post = res?.data;
-  return {
-    props: {
-      post,
-    },
-  };
-}
+// export async function getServerSideProps({ params }) {
+//   const slug = params.slug;
+//   const res = await axios.get(
+//     `https://baganheritage.xyz/wp-json/wp/v2/posts?slug=${slug}`
+//   );
+//   const post = res?.data;
+//   return {
+//     props: {
+//       post,
+//     },
+//   };
+// }
