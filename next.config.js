@@ -3,12 +3,12 @@ module.exports = {
     return [
       {
         source: "/",
-        destination: "https://dailybuzzs.com/",
+        destination: "https://baganheritage.xyz/",
         permanent: true,
       },
       // {
       //   source: "/:slug",
-      //   destination: "https://dailybuzzs.com/:slug",
+      //   destination: "https://baganheritage.xyz/:slug",
       //   permanent: true,
       // },
     ];
