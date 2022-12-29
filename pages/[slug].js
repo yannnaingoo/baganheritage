@@ -3,38 +3,38 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import axios from "axios";
 
-export default function Post({ post }) {
-  const router = useRouter();
+// export default function Post({ post }) {
+//   const router = useRouter();
 
-  useEffect(() => {
-    if (post[0]?.slug) {
-      router.push(`https://baganheritage.xyz/${post[0]?.slug}`);
-    }
-  }, [post[0]?.slug]);
+//   useEffect(() => {
+//     if (post[0]?.slug) {
+//       router.push(`https://baganheritage.xyz/${post[0]?.slug}`);
+//     }
+//   }, [post[0]?.slug]);
 
-  return (
-    <div>
-      <Head>
-        <title>{post[0]?.title?.rendered}</title>
-        <meta name="title" content={post[0]?.title?.rendered} />
-        <meta name="description" content="" />
-        <meta
-          property="og:title"
-          content={post[0]?.yoast_head_json?.og_title}
-        />
-        <meta property="og:description" content="" />
-        <meta
-          property="og:image"
-          content={post[0]?.yoast_head_json?.og_image[0]?.url}
-        />
-        <meta
-          property="og:url"
-          content={`https://baganheritage.vercel.app/${post[0]?.slug}`}
-        />
-      </Head>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <Head>
+//         <title>{post[0]?.title?.rendered}</title>
+//         <meta name="title" content={post[0]?.title?.rendered} />
+//         <meta name="description" content="" />
+//         <meta
+//           property="og:title"
+//           content={post[0]?.yoast_head_json?.og_title}
+//         />
+//         <meta property="og:description" content="" />
+//         <meta
+//           property="og:image"
+//           content={post[0]?.yoast_head_json?.og_image[0]?.url}
+//         />
+//         <meta
+//           property="og:url"
+//           content={`https://baganheritage.vercel.app/${post[0]?.slug}`}
+//         />
+//       </Head>
+//     </div>
+//   );
+// }
 
 //  export async function getStaticProps({ params }) {
 //    const slug = params.slug;
